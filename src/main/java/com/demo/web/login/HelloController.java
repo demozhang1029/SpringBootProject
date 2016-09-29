@@ -13,6 +13,11 @@ public class HelloController {
 
     @RequestMapping("/{id}")
     public String show(@PathVariable("id") Long id) {
-        return id + " hello RESTful web Service";
+        return id + " hello RESTful web Service 123 ";
+    }
+
+    @RequestMapping("/zeroException")
+    public int zeroException() {
+        return 100/0;
     }
 }

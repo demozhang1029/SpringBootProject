@@ -14,33 +14,22 @@ public class JsonRet {
         this.setData(data);
     }
 
-    private void setCode(String code) {
+    public void setCode(String code) {
         this.code = code;
     }
 
-    private String getCode() {
-        return code;
-    }
+    public String getCode() { return code; }
 
-    private void setMessage(String message) {
+    public void setMessage(String message) {
         this.message = message;
     }
 
-    private String getMessage() {
+    public String getMessage() {
         return message;
     }
 
-    private void setData(Object data) {
-        this.data = data;
-    }
+    public void setData(Object data) { this.data = data; }
 
-    private Object getData() {
-        return data;
-    }
-
-    public static void main(String[] args) {
-        JsonRet obj = new JsonRet("200", "hahha", null);
-        System.out.println(obj.getCode() + " " + obj.getMessage() + " " + obj.getData());
-    }
+    public Object getData() { return data; }
 }
 
